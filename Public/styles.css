@@ -1,0 +1,22 @@
+body{
+	background: #708090;
+}
+.first{
+	position: relative;
+  height: 450px;
+  width: 400px;
+}
+ div{
+	height: calc(450px/6);
+	width: 100%;
+	display: flex;
+}
+
+  input{
+	height: 100%;
+	width: 100%;
+	font-size: 2em;
+  color : #20B2AA;
+  background: #F5FFFA;
+
+}
