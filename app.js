@@ -1,26 +1,19 @@
 const express = require("express");
 const bodyParser = require("body-parser"); 
 app = express(); 
-app.use(bodyParser.urlencoded({extended:true})) ;  // .text , .json  
+app.use(bodyParser.urlencoded({extended:true})) ;   
 app.use(express.static("Public")) ;  
 
 
 app.get("/", function (req,res){ 
 
-    res.sendFile(__dirname+"/index.html"); // dirname : the path of the file  
+    res.sendFile(__dirname+"/index.html"); 
 
 }); 
 
 app.post("/" , function(req,res){
-
-    // var num1 = Number(req.body.num1) ; // req.body.num1 : this will get the value entered 
-    // var num2 = Number(req.body.num2) ; 
-    // var result = num1 + num2 ; 
-
-    // res.send("the result is : " + result) ; 
-
-    // req.body.cal.screen.value = eval(req.body.cal.screen.value);
-    // res.send("the result is : " + eval(req.body.equal)) ; 
+    
+    res.send("<h1> the result is </h1> " + eval(req.body.screen) ) ;
 
 }); 
 

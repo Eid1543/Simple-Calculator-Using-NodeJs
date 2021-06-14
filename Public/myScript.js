@@ -20,7 +20,7 @@ for (let i = 0; i < numberOfButtons; i++) {
     cal.screen.value = null;
   }
   else if (input == "="){
-    
+    // noting 
   }
   else {
   // conacatentation
